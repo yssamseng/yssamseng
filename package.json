@@ -1,10 +1,13 @@
 {
+  "homepage": "https://yssamseng.github.io/yssamseng",
   "name": "personal-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -22,6 +25,7 @@
     "@types/react-scroll": "^1.8.6",
     "@vitejs/plugin-react": "^3.1.0",
     "esbuild": "^0.20.2",
+    "gh-pages": "^6.1.1",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
   }
