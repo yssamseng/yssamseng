@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import PersonalSite from './page/PersonalSite'
+// import $ from "jquery";
 
 export default class App extends Component {
 
-  componentDidMount(): void {
+  componentDidMount() {
     "use strict";
 
     //   $(function(){
@@ -56,7 +57,7 @@ export default class App extends Component {
       }
     });
 
-    var activeNavbar = function (section : string) {
+    var activeNavbar = function (section) {
       $('.nav-link').each(function (a) {
         $(this).removeClass('active')
       });
