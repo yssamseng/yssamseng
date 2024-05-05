@@ -1,10 +1,28 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import * as Const from '../utils/conts'
 
 const Navbar = () => {
     const smooth = true
     const duration = 900
+
+    const [activeSection, setActiveSection] = useState('#home-section');
+
+    const handleScroll = () => {
+        // Your scroll logic to determine active section
+      };
+    
+      useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+    
+    //   const activeNavbar = (section) => {
+    //     setActiveSection(section);
+    //   };
+    
     return (
         <Fragment>
             <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">

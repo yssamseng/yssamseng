@@ -35,7 +35,7 @@ export const MySkills = [
 ];
 
 export const MyExperiences = [
-    {"title": "Aware Technology Solution", "year": "2022 - Present", "position": "Software Engineer", "description": "I am a software engineer with expertise in developing robust software using Java, and Dart. My current focus is on developing mobile applications using Flutter and Android (Java). I am always eager to expand my skill set and am open to taking on new challenges in software development."}
+    {"title": "Aware Technology Solution", "year": "2022 - Present", "position": "Software Engineer", "description": "I am a software engineer with expertise in developing Java and Dart software. My current focus is developing mobile applications using Flutter and Android (Java). I am always eager to expand my skill set and am open to taking on new challenges in software development."}
 ];
 
 export const MyEducations = [
